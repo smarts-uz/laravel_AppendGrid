@@ -1,4 +1,4 @@
-
+<table id="{{$element}}"></table>
 <script>
     // Execute when `DOM ready`
     let myAppendGrid;
@@ -6,7 +6,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         // Initialize appendGrid
         myAppendGrid = new AppendGrid({
-            element: "tblAppendGrid",
+            element: {{$element}},
             uiFramework: "bootstrap4",
             iconFramework: "fontawesome5",
             columns: [{

@@ -18,12 +18,14 @@ class laravelAppendGrid extends Component
     public $ctrlOptions;
     public string $name;
     public string $display;
-    public function __construct(string $url,$ctrlOptions, string $name, string $display)
+    public string $element;
+    public function __construct(string $url,$ctrlOptions,$element, string $name, string $display)
     {
         $this->url = $url;
         $this->name = $name;
         $this->display = $display;
         $this->ctrlOptions = $ctrlOptions;
+        $this->element = $element;
     }
     /**
      * Get the view / contents that represent the component.
