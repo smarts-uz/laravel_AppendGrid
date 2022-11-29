@@ -16,9 +16,16 @@ class laravelAppendGrid extends Component
      *
      * @return void
      */
-
-    public function __construct()
+    public string $url;
+    public $ctrlOptions;
+    public string $name;
+    public string $display;
+    public function __construct(string $url,$ctrlOptions, string $name, string $display)
     {
+        $this->url = $url;
+        $this->name = $name;
+        $this->display = $display;
+        $this->ctrlOptions = $ctrlOptions;
     }
     /**
      * Get the view / contents that represent the component.
@@ -27,7 +34,6 @@ class laravelAppendGrid extends Component
      */
     public function render()
     {
-        $users = collect(TgUser::pluck('first_name', 'id')->all())->all();
-        return view('components.AppendGrid', ['users' => $users]);
+        return view('components.AppendGrid');
     }
 }

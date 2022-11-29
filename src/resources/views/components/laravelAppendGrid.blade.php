@@ -10,20 +10,18 @@
             uiFramework: "bootstrap4",
             iconFramework: "fontawesome5",
             columns: [{
-                name: "users",
-                display: "Users",
+                name: {{$name}},
+                display: {{$display}},
                 type: "select",
                 ctrlOptions: {
-                    @foreach ($users as $key =>  $elem)
-        {{$key}}: "{{ $elem }}",
-        @endforeach
+                {{$ctrlOptions}}
     }
     }]
     });
     });
     function ajax_func() {
         $.ajax({
-            url: "/adduser/UserUZMobile/dev",
+            url: {{$url}},
             type: "POST",
             data: {
                 user_id: JSON.stringify(myAppendGrid.getAllValue()),
