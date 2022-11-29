@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Teamprodev\\Yajra\\": "src/"
+      "Teamprodev\\AppendGrid\\": "src/"
     }
   },
   "minimum-stability": "stable"

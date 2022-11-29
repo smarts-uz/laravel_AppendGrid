@@ -1,6 +1,6 @@
 <?php
 
-namespace Teamprodev\Yajra\Providers;
+namespace Teamprodev\AppendGrid\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
