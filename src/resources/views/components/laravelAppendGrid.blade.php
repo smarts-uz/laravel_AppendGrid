@@ -10,8 +10,8 @@
             uiFramework: "bootstrap4",
             iconFramework: "fontawesome5",
             columns: [{
-                name: {{$name}},
-                display: {{$display}},
+                name: "{{$name}}",
+                display: "{{$display}}",
                 type: "select",
                 ctrlOptions: {
                     @foreach (json_decode($ctrlOptions) as $key =>  $elem)
