@@ -2,7 +2,6 @@
 
 namespace App\View\Components;
 
-use App\Models\TgUser;
 use Illuminate\Http\Client\Request;
 use Illuminate\View\Component;
 use ReflectionClass;
