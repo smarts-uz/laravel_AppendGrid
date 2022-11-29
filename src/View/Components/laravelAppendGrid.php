@@ -2,9 +2,12 @@
 
 namespace App\View\Components;
 
+use App\Models\TgUser;
 use Illuminate\Http\Client\Request;
 use Illuminate\View\Component;
 use ReflectionClass;
+namespace App\View\Components;
+
 
 class laravelAppendGrid extends Component
 {
@@ -24,6 +27,7 @@ class laravelAppendGrid extends Component
      */
     public function render()
     {
-        return view('components.laravelAppendGrid');
+        $users = collect(TgUser::pluck('first_name', 'id')->all())->all();
+        return view('components.AppendGrid', ['users' => $users]);
     }
 }
