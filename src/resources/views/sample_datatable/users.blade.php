@@ -4,5 +4,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery.appendgrid@2.0.0/dist/AppendGrid.min.js"></script>
 
-<x-laravelAppendGrid url="/adduser/UserUZMobile/dev" ctrlOptions="{{$users}}" name="users" display="Users" element="table1"></x-laravelAppendGrid>
+<x-laravelAppendGrid url="/adduser/UserUZMobile/dev" :ctrlOptions=json_encode($users) name="users" display="Users" element="table1"></x-laravelAppendGrid>
 

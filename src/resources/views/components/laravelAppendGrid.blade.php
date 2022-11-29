@@ -14,7 +14,7 @@
                 display: {{$display}},
                 type: "select",
                 ctrlOptions: {
-                    @foreach ($ctrlOptions as $key =>  $elem)
+                    @foreach (json_decode($ctrlOptions) as $key =>  $elem)
                             {{$key}}: "{{ $elem }}",
                     @endforeach
     }
@@ -23,7 +23,7 @@
     });
     function ajax_func() {
         $.ajax({
-            url: {{$url}},
+            url: "{{$url}}",
             type: "POST",
             data: {
                 user_id: JSON.stringify(myAppendGrid.getAllValue()),
