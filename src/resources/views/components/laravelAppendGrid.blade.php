@@ -14,7 +14,9 @@
                 display: {{$display}},
                 type: "select",
                 ctrlOptions: {
-                {{$ctrlOptions}}
+                    @foreach ($ctrlOptions as $key =>  $elem)
+                            {{$key}}: "{{ $elem }}",
+                    @endforeach
     }
     }]
     });

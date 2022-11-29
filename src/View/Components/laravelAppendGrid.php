@@ -5,7 +5,6 @@ namespace App\View\Components;
 use Illuminate\Http\Client\Request;
 use Illuminate\View\Component;
 use ReflectionClass;
-namespace App\View\Components;
 
 
 class laravelAppendGrid extends Component
