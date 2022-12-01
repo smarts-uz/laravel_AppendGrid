@@ -1,8 +1,8 @@
 <table id="{{$element}}"></table>
 <script>
     // Execute when `DOM ready`
-    let myAppendGrid;
-    let token = document.getElementsByName('_token')[0].value;
+    var myAppendGrid;
+    var token = document.getElementsByName('_token')[0].value;
     document.addEventListener("DOMContentLoaded", function () {
         // Initialize appendGrid
         myAppendGrid = new AppendGrid({
